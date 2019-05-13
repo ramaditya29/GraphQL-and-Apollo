@@ -28,8 +28,8 @@ const typeDefs = gql`
 
   type Mutation{
       post(title: String, author: String): Book
-      addUser(name: String , age: Int): User
-      addCompany(name: String, description: String): Company
+      addUser(name: String! , age: Int!): User
+      addCompany(name: String!, description: String!): Company
   }
 `;
 
